@@ -1,0 +1,10 @@
+{
+  "name": "jobify-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node Server/server.js",
+    "install-client": "cd Client/Jobify && npm install",
+    "build-client": "cd Client/Jobify && npm run build",
+    "postinstall": "npm run install-client && npm run build-client"
+  }
+}

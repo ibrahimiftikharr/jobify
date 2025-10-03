@@ -15,7 +15,7 @@ app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb+srv://nooriftikhar000_db_user:E69S9RvU96vgDp44@cluster0.5zvg7iu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://nooriftikhar000_db_user:ytgCRVz9s16c4ofa@cluster0.5zvg7iu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -38,5 +38,5 @@ app.get('*', (req, res) => {
 });
 // -----------------------------------------
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
